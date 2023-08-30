@@ -18,7 +18,7 @@ apt install -y nala
 
 ## Xfce4 installation
 echo -e "\e[1;32m Installing xfce4 \e[0m"
-apt install -y xfce4 thunar gnome-system-tools
+apt install -y xfce4 thunar gnome-system-tools libxfce4ui-utils
 
 # Download Managers
 echo -e "\e[1;32m Installing download managers \e[0m"
