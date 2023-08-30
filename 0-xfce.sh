@@ -20,6 +20,10 @@ apt install -y nala
 echo -e "\e[1;32m Installing xfce4 \e[0m"
 apt install -y xfce4 thunar gnome-system-tools
 
+# Download Managers
+echo -e "\e[1;32m Installing download managers \e[0m"
+apt install -y curl wget axel aria2
+
 ## Xfce4 installation
 echo -e "\e[1;32m Installing xfce desktop plugins \e[0m"
 apt install -y clipman xfce4-clipman-plugin
@@ -45,10 +49,6 @@ apt install -y mpv
 # System Monitors
 echo -e "\e[1;32m Installing conky nefetch htop \e[0m"
 apt install -y conky neofetch htop
-
-# Download Managers
-echo -e "\e[1;32m Installing download managers \e[0m"
-apt install -y curl wget axel aria2
 
 # Browser
 echo -e "\e[1;32m Installing firefox-esr and chromium \e[0m"
