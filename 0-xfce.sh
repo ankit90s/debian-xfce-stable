@@ -8,6 +8,9 @@ fi
 
 clear
 
+# Get username
+username=$(id -u -n 1000)
+
 # Copy Source file
 echo -e "\e[1;32m Copying sources.list file \e[0m"
 mv /etc/apt/sources.list /etc/apt/sources.list.bkp
