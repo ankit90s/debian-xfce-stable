@@ -61,10 +61,6 @@ apt install -y chromium
 echo -e "\e[1;32m Installing Document viewer \e[0m"
 apt install -y evince
 
-# Text editor
-echo -e "\e[1;32m Installing Document viewer \e[0m"
-apt install -y gedit
-
 # image viewer
 echo -e "\e[1;32m Installing Image viewer \e[0m"
 apt install -y gpicview
