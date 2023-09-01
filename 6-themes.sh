@@ -28,10 +28,14 @@ apt install -y materia-gtk-theme
 
 # mint themes
 echo -e "\e[1;32m Installing linux mint themes \e[0m"
-wget http://packages.linuxmint.com/pool/main/m/mint-x-icons/mint-x-icons_1.6.5_all.deb
-wget http://packages.linuxmint.com/pool/main/m/mint-themes/mint-themes_2.1.5_all.deb
-apt install -y ./mint-x-icons_1.6.5_all.deb
-apt install -y ./mint-themes_2.1.5_all.deb
+
+wget http://packages.linuxmint.com/pool/main/m/mint-x-icons/mint-x-icons_1.6.5_all.deb -O mint-x-icons.deb
+apt install -y ./mint-x-icons.deb
+rm mint-x-icons.deb
+
+wget http://packages.linuxmint.com/pool/main/m/mint-themes/mint-themes_2.1.5_all.deb -O mint-themes.deb
+apt install -y ./mint-themes.deb
+rm mint-themes.deb
 
 # Colloid theme
 # git clone https://github.com/vinceliuice/Colloid-gtk-theme.git

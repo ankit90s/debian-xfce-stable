@@ -35,9 +35,9 @@ apt install -y xfce4-power-manager
 apt install -y thunar-archive-plugin
 apt install -y xfce4-screenshooter
 apt install -y xfce4-whiskermenu-plugin
-wget https://mxrepo.com/mx/repo/pool/main/x/xfce4-docklike-plugin/xfce4-docklike-plugin_0.4.1-0.1~mx23+1_amd64.deb
-apt install -y ./xfce4-docklike-plugin_0.4.1-0.1~mx23+1_amd64.deb
-rm xfce4-docklike-plugin_0.4.1-0.1~mx23+1_amd64.deb
+wget https://mxrepo.com/mx/repo/pool/main/x/xfce4-docklike-plugin/xfce4-docklike-plugin_0.4.1-0.1~mx23+1_amd64.deb -O docklike.deb
+apt install -y ./docklike.deb
+rm docklike.deb
 
 # Other essential packages
 echo -e "\e[1;32m Installing essential packages \e[0m"
