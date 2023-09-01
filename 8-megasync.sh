@@ -19,8 +19,6 @@ apt install -y megasync
 apt update
 apt install -y thunar-megasync
 
-cp -r /home/$username/xfce-debian/settings/autostart /home/$username/.config
-
 echo
 echo -e "\e[1;32m Rebooting please wait \e[0m"
 sleep 5s
