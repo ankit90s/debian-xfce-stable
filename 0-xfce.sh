@@ -18,11 +18,10 @@ mv /etc/apt/sources.list /etc/apt/sources.list.bkp
 cp sources.list /etc/apt/sources.list
 apt update && apt upgrade -y
 apt install -y aptitude
-apt install -y nala
 
 ## Xfce4 installation
 echo -e "\e[1;32m Installing xfce4 \e[0m"
-apt install -y xfce4 thunar gnome-system-tools libxfce4ui-utils
+apt install -y xfce4 gnome-system-tools
 
 # Download Managers
 echo -e "\e[1;32m Installing download managers \e[0m"
