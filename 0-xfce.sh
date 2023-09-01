@@ -129,5 +129,3 @@ echo -e "\e[1;32m Rebooting please wait \e[0m"
 
 sleep 5s
 reboot
-
-
