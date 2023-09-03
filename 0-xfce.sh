@@ -111,10 +111,6 @@ echo -e "\e[1;32m Creating directory ISO in home folder \e[0m"
 mkdir /home/$username/ISOs
 chown $username:$username /home/$username/*
 
-# wallpapers
-echo -e "\e[1;32m Installing distrotube wallpaper collection \e[0m"
-./4-wallpapers.sh
-
 # install slick greeter
 echo -e "\e[1;32m Installing slick greeter \e[0m"
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
