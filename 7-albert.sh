@@ -16,3 +16,5 @@ echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian
 curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_12/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null
 apt update
 apt install -y albert
+
+cp -r /home/$username/debian-xfce-stable/settings/autostart /home/$username/.config
