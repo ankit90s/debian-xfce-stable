@@ -44,7 +44,7 @@ rm docklike.deb
 
 # Other essential packages
 echo -e "\e[1;32m Installing essential packages \e[0m"
-apt install -y xterm exa mugshot menulibre nvidia-detect
+apt install -y exa mugshot menulibre nvidia-detect
 
 # Archiving tools
 echo -e "\e[1;32m Installing archiving tools \e[0m"
