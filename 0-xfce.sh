@@ -51,7 +51,7 @@ echo -e "\e[1;32m Installing archiving tools \e[0m"
 apt install -y zip unzip 7zip
 
 # Media Player
-apt install -y mpv
+apt install -y mpv mpv-mpris
 
 # System Monitors
 echo -e "\e[1;32m Installing conky nefetch htop \e[0m"
