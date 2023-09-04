@@ -14,3 +14,8 @@ builddr=$(pwd)
 echo -e "\e[1;32m Installing libreoffice and its themes \e[0m"
 apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer -t bookworm-backports
 apt install -y libreoffice-style* -t bookworm-backports
+
+echo 
+echo -e "\e[1;32m Rebooting now \e[0m"
+sleep 5s
+reboot
