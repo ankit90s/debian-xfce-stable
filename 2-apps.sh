@@ -71,9 +71,8 @@ rm -rf ani-cli
 # fast-cli
 echo -e "\e[1;32m Installing fast-cli for Internet speed test \e[0m"
 wget https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -O fast
-chmod +x fast
-mv fast /usr/local/bin
-
+install fast /usr/local/bin
+rm fast
 
 # config files
 echo -e "\e[1;32m Copying config files \e[0m"
