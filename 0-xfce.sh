@@ -109,7 +109,7 @@ cp bash_aliases /home/$username/.bash_aliases
 # mkdir
 echo -e "\e[1;32m Creating directory ISO in home folder \e[0m"
 mkdir /home/$username/ISOs
-chown $username:$username /home/$username/*
+chown -Rv $username:$username /home/$username/
 
 # install slick greeter
 echo -e "\e[1;32m Installing slick greeter \e[0m"

@@ -18,3 +18,4 @@ apt update
 apt install -y albert
 
 cp -r /home/$username/debian-xfce-stable/settings/autostart /home/$username/.config
+chown -Rv $username:$username /home/$username/
