@@ -73,9 +73,10 @@ apt install -y gpicview
 echo -e "\e[1;32m Installing cursor themes \e[0m"
 apt install -y bibata-cursor-theme dmz-cursor-theme
 
-# terminal of choice
-echo -e "\e[1;32m Installing terminal \e[0m"
+# Install terminal of choice
+echo -e "\e[1;32m Installing default terminal as alacritty \e[0m"
 apt install -y alacritty
+update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator alacritty 200 && update-alternatives --set x-terminal-emulator alacritty
 
 # onboard keyboard
 echo -e "\e[1;32m Installing onscreen keyboard \e[0m"
@@ -124,7 +125,7 @@ cp settings/grub /etc/default
 update-grub
 
 echo
-echo -e "\e[1;32m Rebooting please wait \e[0m"
+echo -e "\e[1;32m Rebooting Now \e[0m"
 
 sleep 5s
 reboot
