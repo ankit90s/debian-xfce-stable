@@ -25,7 +25,7 @@ apt install -y xorg
 
 ## Xfce4 installation
 echo -e "\e[1;32m Installing xfce4 \e[0m"
-apt install -y xfce4 gnome-system-tools
+apt install -y xfce4
 
 # Download Managers
 echo -e "\e[1;32m Installing download managers \e[0m"
