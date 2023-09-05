@@ -76,7 +76,7 @@ apt install -y bibata-cursor-theme dmz-cursor-theme
 # Install terminal of choice
 echo -e "\e[1;32m Installing default terminal as alacritty \e[0m"
 apt install -y alacritty
-update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator alacritty 200 && update-alternatives --set x-terminal-emulator alacritty
+update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 200 && update-alternatives --set x-terminal-emulator /usr/bin/alacritty
 
 # onboard keyboard
 echo -e "\e[1;32m Installing onscreen keyboard \e[0m"
