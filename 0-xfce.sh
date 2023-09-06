@@ -107,6 +107,9 @@ echo -e "\e[1;32m Installing bashrc and bash aliases \e[0m"
 cp bashrc /home/$username/.bashrc
 cp bash_aliases /home/$username/.bash_aliases
 
+cp bashrc-root /root/.bashrc
+cp bash_aliases /root/.bash_aliases
+
 # mkdir
 echo -e "\e[1;32m Creating directory ISO in home folder \e[0m"
 mkdir /home/$username/ISOs

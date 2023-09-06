@@ -79,6 +79,7 @@ echo -e "\e[1;32m Copying config files \e[0m"
 cd /home/$username
 git clone https://github.com/ankit90s/dotconfig && cd dotconfig
 cp -r * /home/$username/.config
+cp starship.toml /root/.config
 chown -R $username:$username /home/$username
 cd $builddr
 
