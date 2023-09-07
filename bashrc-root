@@ -11,7 +11,7 @@
 alias ls='exa --long --icons --group-directories-first --color=always'
 alias la='ls -a'
 
-clear && pfetch
+clear && pfetch && cd /root
 eval "$(starship init bash)"
 
 if [ -f ~/.bash_aliases ]; then
