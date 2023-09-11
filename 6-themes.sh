@@ -38,19 +38,25 @@ apt install -y ./mint-themes.deb
 rm mint-themes.deb
 
 # Colloid theme
-# git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
-# cd Colloid-gtk-theme
+git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
+cd Colloid-gtk-theme
 # ./install.sh -d /usr/share/themes --tweaks dracula
 # ./install.sh -d /usr/share/themes --tweaks nord
-# ./install.sh -d /usr/share/themes
+./install.sh -d /usr/share/themes
 # ./install.sh -d /usr/share/themes -t green
-# cd .. && rm -rf Colloid-gtk-theme
+cd .. && rm -rf Colloid-gtk-theme
 
 # Qogir themes
 # git clone https://github.com/vinceliuice/Qogir-theme.git
 # cd Qogir-theme
 # ./install.sh -d /usr/share/themes --tweaks image square round
 # cd .. && rm -rf Qogir-theme
+
+# Colloid icons
+git clone https://github.com/vinceliuice/Colloid-icon-theme.git
+cd Colloid-icon-theme
+./install -d /usr/share/icons
+cd .. && rm -rf Colloid-icon-theme
 
 # Papirus icon
 echo -e "\e[1;32m Installing papirus icon theme \e[0m"
