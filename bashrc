@@ -167,6 +167,9 @@ if [ -d "/var/lib/flatpak/exports/bin/" ] ;
   then PATH="/var/lib/flatpak/exports/bin/:$PATH"
 fi
 
+### "nvim" as manpager
+export MANPAGER="nvim +Man!"
+
 # uname -sr
 clear && pfetch
 eval "$(starship init bash)"
