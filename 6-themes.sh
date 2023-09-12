@@ -10,6 +10,8 @@ fi
 username=$(id -u -n 1000)
 builddr=$(pwd)
 
+apt update
+
 # dependencies
 echo -e "\e[1;32m Installing theme dependencies \e[0m"
 apt install -y gtk2-engines-murrine gtk2-engines-pixbuf

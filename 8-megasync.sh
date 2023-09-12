@@ -10,6 +10,8 @@ fi
 username=$(id -u -n 1000)
 builddr=$(pwd)
 
+apt update
+
 echo -e "\e[1;32m Installing megasync \e[0m"
 
 echo 'deb https://mega.nz/linux/repo/Debian_12/ /' | tee /etc/apt/sources.list.d/megasync.list

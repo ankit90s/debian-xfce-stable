@@ -10,6 +10,8 @@ fi
 username=$(id -u -n 1000)
 builddr=$(pwd)
 
+apt update
+
 # libreoffice install
 echo -e "\e[1;32m Installing libreoffice and its themes \e[0m"
 apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer -t bookworm-backports

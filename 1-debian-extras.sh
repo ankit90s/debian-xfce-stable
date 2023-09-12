@@ -10,6 +10,8 @@ fi
 username=$(id -u -n 1000)
 builddr=$(pwd)
 
+apt update
+
 # fonts
 echo -e "\e[1;32m Installing system fonts \e[0m"
 apt install -y fonts-indic \

@@ -10,6 +10,8 @@ fi
 username=$(id -u -n 1000)
 builddr=$(pwd)
 
+apt update
+
 echo -e "\e[1;32m Installing albert launcher \e[0m"
 
 echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_12/ /' | tee /etc/apt/sources.list.d/home:manuelschneid3r.list

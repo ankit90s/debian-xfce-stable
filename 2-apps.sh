@@ -10,6 +10,8 @@ fi
 username=$(id -u -n 1000)
 builddr=$(pwd)
 
+apt update
+
 # Applications and utilities
 echo -e "\e[1;32m Installing apps and utilities \e[0m"
 apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect gpick
