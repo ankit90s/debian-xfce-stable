@@ -55,10 +55,17 @@ cd .. && rm -rf Colloid-gtk-theme
 # cd .. && rm -rf Qogir-theme
 
 # Colloid icons
+echo -e "\e[1;32m Installing colloid icon theme \e[0m"
 git clone https://github.com/vinceliuice/Colloid-icon-theme.git
 cd Colloid-icon-theme
 ./install -d /usr/share/icons
 cd .. && rm -rf Colloid-icon-theme
+
+# Cursor Setup
+echo -e "\e[1;32m Nordzy cursor theme \e[0m"
+git clone https://github.com/alvatip/Nordzy-cursors
+cd Nordzy-cursors && sudo ./install.sh
+cd ../ && rm -rf Nordzy-cursors
 
 # Papirus icon
 echo -e "\e[1;32m Installing papirus icon theme \e[0m"
