@@ -35,6 +35,7 @@ apt install -y curl wget axel aria2
 echo -e "\e[1;32m Installing xfce desktop plugins \e[0m"
 apt install -y clipman xfce4-clipman-plugin
 apt install -y xfce4-power-manager
+apt install -y xfce4-panel-profiles
 apt install -y xfce4-appmenu-plugin
 apt install -y thunar-archive-plugin
 apt install -y xfce4-screenshooter
