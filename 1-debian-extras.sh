@@ -73,6 +73,9 @@ apt install -y mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlaye
 echo -e "\e[1;32m Installing build tools \e[0m"
 apt install -y build-essential linux-headers-$(uname -r) intel-microcode
 
+# xfce4-panel-profiles
+xfce4-panel-profiles load /home/$username/debian-xfce-stable/settings/gnome.tar.bz2
+
 # remove old drivers:
 sudo apt purge xserver-xorg-video-intel
 
