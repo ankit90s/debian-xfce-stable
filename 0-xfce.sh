@@ -112,6 +112,9 @@ cp bash_aliases /home/$username/.bash_aliases
 cp bashrc-root /root/.bashrc
 cp bash_aliases /root/.bash_aliases
 
+# load xfce4-panel-profiles
+xfce4-panel-profiles load /home/$username/debian-xfce-stable/settings/my-panel.tar.bz2
+
 # mkdir
 echo -e "\e[1;32m Creating directory ISO in home folder \e[0m"
 mkdir /home/$username/ISOs
