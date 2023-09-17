@@ -61,7 +61,7 @@ apt install -y conky neofetch htop
 
 # Browser
 echo -e "\e[1;32m Installing firefox-esr and chromium \e[0m"
-apt install -y chromium
+apt install -y firefox-esr
 
 # PDF viewer
 echo -e "\e[1;32m Installing Document viewer \e[0m"
