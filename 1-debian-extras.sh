@@ -73,6 +73,9 @@ apt install -y mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlaye
 echo -e "\e[1;32m Installing build tools \e[0m"
 apt install -y build-essential linux-headers-$(uname -r) intel-microcode
 
+# remove old drivers:
+sudo apt purge xserver-xorg-video-intel
+
 echo 
 echo -e "\e[1;32m Rebooting please wait \e[0m"
 sleep 5s
