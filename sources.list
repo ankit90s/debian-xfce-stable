@@ -19,6 +19,3 @@ deb http://debian-archive.trafficmanager.net/debian/ bookworm-backports main con
 # deb http://deb.debian.org/debian/ bookworm-backports main contrib non-free non-free-firmware
 # deb http://mirror.cse.iitk.ac.in/debian/ bookworm-backports main contrib non-free non-free-firmware
 # deb-src http://debian-archive.trafficmanager.net/debian/ bookworm-backports main contrib non-free non-free-firmware
-
-# unstable Repo
-deb http://deb.debian.org/debian/ unstable main contrib non-free non-free-firmware
