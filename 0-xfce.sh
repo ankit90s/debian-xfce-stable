@@ -61,7 +61,16 @@ apt install -y conky neofetch htop
 
 # Browser
 echo -e "\e[1;32m Installing firefox-esr and chromium \e[0m"
-apt install -y firefox-esr
+touch /etc/apt/prefrences.d/99firefox-unstable
+echo "Package: *
+Pin: release a=stable
+Pin-Priority: 900
+
+Package: *
+Pin: release a=unstable
+Pin-Priority: 10" >> /etc/apt/prefrences.d/99firefox-unstable
+apt update
+apt install -y firefox -t unstable
 
 # PDF viewer
 echo -e "\e[1;32m Installing Document viewer \e[0m"
