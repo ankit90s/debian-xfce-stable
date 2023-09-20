@@ -38,6 +38,8 @@ apt install -y xfce4-power-manager
 apt install -y xfce4-panel-profiles
 apt install -y xfce4-appmenu-plugin
 apt install -y thunar-archive-plugin
+apt install -y xfce4-taskmanager
+apt install -y xfce4-sensor-plugin
 apt install -y xfce4-screenshooter
 apt install -y xfce4-whiskermenu-plugin
 wget https://mxrepo.com/mx/repo/pool/main/x/xfce4-docklike-plugin/xfce4-docklike-plugin_0.4.1-0.1~mx23+1_amd64.deb -O docklike.deb
