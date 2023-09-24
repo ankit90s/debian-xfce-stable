@@ -12,25 +12,19 @@ builddr=$(pwd)
 
 apt update
 
-# dependencies
 echo -e "\e[1;32m Installing theme dependencies \e[0m"
 apt install -y gtk2-engines-murrine gtk2-engines-pixbuf
 
-# dconf editor
-echo -e "\e[1;32m Installing dconf editor \e[0m"
+echo -e "\e[1;32m Installed dconf editor \e[0m"
 apt install -y dconf-editor
 
-# Arc theme
-echo -e "\e[1;32m Installing Arc theme \e[0m"
+echo -e "\e[1;32m Installed Arc theme \e[0m"
 apt install -y arc-theme
 
-# Materia theme
-echo -e "\e[1;32m Installing Materia theme \e[0m"
+echo -e "\e[1;32m Installed Materia theme \e[0m"
 apt install -y materia-gtk-theme
 
-# mint themes
-echo -e "\e[1;32m Installing linux mint themes \e[0m"
-
+echo -e "\e[1;32m Installed linux mint themes \e[0m"
 wget http://packages.linuxmint.com/pool/main/m/mint-x-icons/mint-x-icons_1.6.5_all.deb -O mint-x-icons.deb
 apt install -y ./mint-x-icons.deb
 rm mint-x-icons.deb
@@ -58,22 +52,18 @@ rm mint-themes.deb
 # ./install -d /usr/share/icons
 # cd .. && rm -rf Colloid-icon-theme
 
-# Cursor Setup
-echo -e "\e[1;32m Nordzy cursor theme \e[0m"
+echo -e "\e[1;32m Installed Nordzy cursor theme \e[0m"
 git clone https://github.com/alvatip/Nordzy-cursors
 cd Nordzy-cursors && sudo ./install.sh
 cd ../ && rm -rf Nordzy-cursors
 
-# Papirus icon
-echo -e "\e[1;32m Installing papirus icon theme \e[0m"
+echo -e "\e[1;32m Installed papirus icon theme \e[0m"
 apt install -y papirus-icon-theme -t bookworm-backports
 
-# Papirus folder
-echo -e "\e[1;32m Installing papirus folder theme \e[0m"
+echo -e "\e[1;32m Installed papirus folder theme \e[0m"
 wget -qO- https://git.io/papirus-folders-install | sh
 papirus-folders -C yaru --theme Papirus-Dark
 
-# kde apps theme fix
 echo -e "\e[1;32m Fix for qt-apps \e[0m"
 apt install -y qt5-style-plugins
 cp environment /etc/environment
