@@ -70,6 +70,14 @@ apt install -y conky neofetch htop
 echo -e "\e[1;32m Installed firefox-esr or chromium \e[0m"
 apt install -y firefox-esr
 
+echo -e "\e[1;32m Installed brave browser \e[0m"
+curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list
+
+apt update
+apt install -y brave-browser
+
 echo -e "\e[1;32m Installed Evince document viewer \e[0m"
 apt install -y evince
 
