@@ -66,9 +66,9 @@ rm -rf ani-cli
 
 # Goolge Chrome
 # echo -e "\e[1;32m Installing google chrome \e[0m"
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt install -y ./google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# apt install -y ./google-chrome-stable_current_amd64.deb
+# rm google-chrome-stable_current_amd64.deb
 
 # fast-cli
 echo -e "\e[1;32m Installing fast-cli for Internet speed test \e[0m"
