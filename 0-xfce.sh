@@ -27,6 +27,9 @@ apt install -y xorg
 echo -e "\e[1;32m Installing xfce4 \e[0m"
 apt install -y xfce4
 
+# network manager
+apt install -y network-manager-gnome
+
 # Download Managers
 echo -e "\e[1;32m Installing download managers \e[0m"
 apt install -y curl wget axel aria2
