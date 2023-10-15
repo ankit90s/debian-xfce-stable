@@ -71,7 +71,8 @@ echo -e "\e[1;32m Installed conky nefetch htop \e[0m"
 apt install -y conky neofetch htop
 
 echo -e "\e[1;32m Installed firefox-esr or chromium \e[0m"
-apt install -y firefox-esr
+ wget -O FirefoxSetup.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US" 
+ tar -xf firefoxsetup.tar.bz2 --directory /opt
 
 echo -e "\e[1;32m Installed Evince document viewer \e[0m"
 apt install -y evince
